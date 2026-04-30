@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f0a08" />
+  <meta name="description" content="הסטקייה בסומסום — מסעדת גריל כשרה (רבנות אשדוד) ברחוב הרב הרצוג 10, אשדוד. סטייקים, המבורגרים ומנות על האש. טלפון 077-330-5337." />
+  <title>הסטקייה בסומסום · אשדוד</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('sk_theme') ||
+          (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18c0-5 4-10 10-10s10 5 10 10c0 4-3 7-7 7H13c-4 0-7-3-7-7z"/>
+            <path d="M11 22s1-2 5-2 5 2 5 2"/>
+            <path d="M14 13c1-2 3-2 4 0M19 13c1-2 3-2 4 0"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">הסטקייה</span>
+          <span class="brand-sub">בסומסום · אשדוד</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">אודות</a>
+        <a href="#menu">התפריט</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#visit">איך מגיעים</a>
+        <a href="#order" class="nav-cta">להזמנה</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="תפריט">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">בשרים על האש · אשדוד · כשר רבנות</p>
+      <h1 class="hero-title reveal">
+        <span>הסטקייה</span>
+        <span class="hero-italic">בסומסום</span>
+      </h1>
+      <p class="hero-tag reveal">
+        סטייקים, המבורגרים ומנות שף על הגריל — מבושלות בעבודת יד, מוגשות עם אש.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#order" class="btn btn-primary">הזמינו עכשיו</a>
+        <a href="#menu" class="btn btn-ghost">לתפריט</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div><strong>כשר</strong><span>רבנות אשדוד</span></div>
+        <div><strong>גריל פחמים</strong><span>בעבודת יד</span></div>
+        <div><strong>משלוחים</strong><span>בכל אשדוד</span></div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="גלול למטה">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container split">
+      <div class="split-text reveal">
+        <p class="eyebrow">הסיפור שלנו</p>
+        <h2>הריח של הגריל. הטעם של הבית.</h2>
+        <p class="lead">
+          בלב אשדוד, מאחורי המסך של פחמים בוערים ולהבה כחולה, נולדה הסטקייה בסומסום —
+          מקום שמחבר בין סטייקייה אמיתית לאווירה ביתית.
+        </p>
+        <p>
+          אנחנו עובדים עם בשר טרי שנבחר ביד, מתבלים בפשטות, וצולים על אש פתוחה
+          עד שכל מנה מגיעה בדיוק כמו שצריך — עסיסית, חרוכה בקצוות, ומלאה בטעם.
+        </p>
+        <ul class="check-list">
+          <li>ניתוחים מובחרים — אנטריקוט, פילה, סינטה ועוד</li>
+          <li>המבורגרים בעבודת יד עם בשר טחון יומי</li>
+          <li>מנות צד ביתיות, רטבים מהמטבח, פיתות חמות</li>
+        </ul>
+      </div>
+      <div class="split-media reveal">
+        <div class="media-card">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80" alt="סטייק על הגריל" loading="lazy" />
+        </div>
+        <div class="media-card media-card-sm">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="בשרים" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">התפריט</p>
+        <h2>מה אוכלים אצלנו</h2>
+        <p class="section-sub">תפריט מתעדכן באופן קבוע. ההזמנה המלאה — דרך ashdodmenu.co.il.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>סטייקים מהגריל</h3>
+            <p>אנטריקוט, פילה, סינטה ופיקניה — צלויים על פחמים, מוגשים עם תוספת לבחירה.</p>
+            <span class="menu-tag">מנת המקום</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>המבורגרים</h3>
+            <p>בשר טחון יומי, בלחמנייה ביתית, עם רטבים שאנחנו מכינים בבית.</p>
+            <span class="menu-tag">פופולרי</span>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>שיפודים ופלאפים</h3>
+            <p>שיפודי פרגית, כבד, בשר ועוף — צלויים בנקודה המושלמת.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>תוספות ומנות צד</h3>
+            <p>צ'יפס ביתי, אורז, סלטים, פטריות שמפיניון, פיתה חמה ועוד.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1542528180-a1208c5169a5?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>מנות לסועד יחיד</h3>
+            <p>מנות עסקיות מתחלפות, מותאמות לארוחת צהריים מהירה.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>שתייה וקינוחים</h3>
+            <p>שתייה קרה, בירות, קינוחי בית טריים מהיום.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-xl reveal">
+        <a href="#order" class="btn btn-primary">לתפריט המלא ולהזמנה</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">גלריה</p>
+        <h2>אש, עשן, טעם</h2>
+      </div>
+
+      <div class="gallery" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========== ORDER CTA ========== -->
+  <section class="order-cta" id="order">
+    <div class="order-bg" aria-hidden="true"></div>
+    <div class="container order-inner reveal">
+      <p class="eyebrow eyebrow-light">הזמנה אונליין</p>
+      <h2>רעבים? אנחנו כבר על האש.</h2>
+      <p>
+        ההזמנה רצה דרך <strong>ashdodmenu.co.il</strong> — תפריט מלא, מחירים מעודכנים, איסוף עצמי או משלוח.
+      </p>
+      <a href="https://www.ashdodmenu.co.il/restaurants/%D7%94%D7%A1%D7%98%D7%A7%D7%99%D7%99%D7%94-%D7%91%D7%A1%D7%95%D7%9E%D7%A1%D7%95%D7%9D-%D7%90%D7%A9%D7%93%D7%95%D7%93"
+         target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        להזמנה דרך ashdodmenu
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;transform:scaleX(-1)">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <p class="order-fine">נפתח בחלון חדש · אפשרות לאיסוף עצמי או משלוח</p>
+    </div>
+  </section>
+
+  <!-- ========== VISIT ========== -->
+  <section class="section" id="visit">
+    <div class="container split">
+      <div class="split-text reveal">
+        <p class="eyebrow">איך מגיעים</p>
+        <h2>אנחנו פה, ומחכים לכם.</h2>
+        <ul class="info-list">
+          <li>
+            <span class="info-ic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7 7-13a7 7 0 1 0-14 0c0 6 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </span>
+            <div>
+              <strong>כתובת</strong>
+              <a id="addressLink" href="#" target="_blank" rel="noopener" class="link-quiet"></a>
+            </div>
+          </li>
+          <li>
+            <span class="info-ic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            </span>
+            <div><strong>טלפון</strong><a id="phoneLink" href="#" class="phone-link"></a></div>
+          </li>
+          <li>
+            <span class="info-ic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <strong>שעות פעילות <span class="open-status" id="openStatus" aria-live="polite"></span></strong>
+              <span class="hours" id="hoursList"></span>
+            </div>
+          </li>
+          <li>
+            <span class="info-ic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 4 4 .6-3 3 .8 4.4L12 13l-3.8 2 .8-4.4-3-3 4-.6 2-4z"/></svg>
+            </span>
+            <div><strong>כשרות</strong><span id="kashrutText"></span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="map-card reveal">
+        <iframe
+          id="mapFrame"
+          title="הסטקייה בסומסום"
+          src=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <a id="mapCta" href="#" target="_blank" rel="noopener" class="map-cta">
+          לפתיחת ניווט
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px;transform:scaleX(-1)"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-title">הסטקייה בסומסום</span>
+        <p>מסעדת גריל כשרה ברחוב הרב הרצוג 10, אשדוד. סטייקים, המבורגרים ומנות על האש בעבודת יד.</p>
+      </div>
+      <div>
+        <h4>ניווט</h4>
+        <ul>
+          <li><a href="#about">אודות</a></li>
+          <li><a href="#menu">התפריט</a></li>
+          <li><a href="#gallery">גלריה</a></li>
+          <li><a href="#visit">איך מגיעים</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>הזמנה</h4>
+        <ul>
+          <li><a href="tel:0773305337">077-330-5337</a></li>
+          <li><a href="https://www.ashdodmenu.co.il/restaurants/%D7%94%D7%A1%D7%98%D7%A7%D7%99%D7%99%D7%94-%D7%91%D7%A1%D7%95%D7%9E%D7%A1%D7%95%D7%9D-%D7%90%D7%A9%D7%93%D7%95%D7%93" target="_blank" rel="noopener">משלוח / איסוף</a></li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&destination=31.8033502,34.6525539" target="_blank" rel="noopener">הרב הרצוג 10, אשדוד</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      © <span id="year"></span> הסטקייה בסומסום · כל הזכויות שמורות
+    </div>
+  </footer>
+
+  <a id="fabCall" href="#" class="fab-call" aria-label="התקשרו אלינו">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

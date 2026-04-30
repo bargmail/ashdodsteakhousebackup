@@ -1,0 +1,70 @@
+{
+  "address": "הרב הרצוג 10, אשדוד",
+  "lat": 31.8033502,
+  "lng": 34.6525539,
+  "phone": "077-330-5337",
+  "kashrut": "רבנות אשדוד",
+  "schedule": [
+    {
+      "isOpen": true,
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "isOpen": true,
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "isOpen": true,
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "isOpen": true,
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "isOpen": true,
+      "open": "12:00",
+      "close": "16:00"
+    },
+    {
+      "isOpen": false,
+      "open": "00:00",
+      "close": "00:00"
+    },
+    {
+      "isOpen": false,
+      "open": "00:00",
+      "close": "00:00"
+    }
+  ],
+  "gallery": [
+    {
+      "url": "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=900&q=80",
+      "hidden": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80",
+      "hidden": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=900&q=80",
+      "hidden": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+      "hidden": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=900&q=80",
+      "hidden": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&fit=crop&w=900&q=80",
+      "hidden": false
+    }
+  ]
+}

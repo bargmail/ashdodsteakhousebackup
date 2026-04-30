@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>ניהול · הסטקייה בסומסום</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="manage-grill.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('sk_theme') ||
+          (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="admin-body">
+
+  <!-- LOGIN -->
+  <div id="loginScreen" class="login-screen">
+    <form id="loginForm" class="login-card">
+      <h1>ניהול האתר</h1>
+      <p class="muted">הסטקייה בסומסום</p>
+      <div id="loginError" class="error" hidden></div>
+      <label>שם משתמש <input id="lUser" autocomplete="username" required autofocus /></label>
+      <label>סיסמה <input id="lPass" type="password" autocomplete="current-password" required /></label>
+      <button class="btn btn-primary" type="submit">כניסה</button>
+    </form>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="dashboard" hidden>
+    <header class="admin-header">
+      <div>
+        <h1>לוח ניהול</h1>
+        <p class="muted">עורכים את התוכן של האתר. שינויים נשמרים מיידית.</p>
+      </div>
+      <div class="admin-actions">
+        <a href="/" target="_blank" rel="noopener" class="btn btn-ghost-dark">צפה באתר</a>
+        <button id="logoutBtn" class="btn btn-ghost-dark">התנתקות</button>
+      </div>
+    </header>
+
+    <div id="toast" class="toast" hidden></div>
+
+    <section class="panel">
+      <h2>פרטי המסעדה</h2>
+      <form id="infoForm" class="form-grid">
+        <label class="full">כתובת מלאה
+          <input id="fAddress" required />
+        </label>
+        <label>קו רוחב (lat)
+          <input id="fLat" required type="number" step="any" />
+        </label>
+        <label>קו אורך (lng)
+          <input id="fLng" required type="number" step="any" />
+        </label>
+        <label>טלפון
+          <input id="fPhone" required />
+        </label>
+        <label>כשרות
+          <input id="fKashrut" required />
+        </label>
+        <button type="submit" class="btn btn-primary">שמירת פרטים</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>שעות פעילות</h2>
+      <p class="muted small">סמנו "פתוח" וקבעו שעת פתיחה וסגירה לכל יום. השעות מתקבצות אוטומטית באתר.</p>
+      <form id="hoursForm" class="hours-form"></form>
+    </section>
+
+    <section class="panel">
+      <h2>אבטחה</h2>
+      <p class="muted small">החליפו את סיסמת הניהול. דרושה הסיסמה הנוכחית כדי לאשר את השינוי.</p>
+      <form id="passwordForm" class="form-grid">
+        <label class="full">סיסמה נוכחית
+          <input id="pCurrent" type="password" autocomplete="current-password" required />
+        </label>
+        <label>סיסמה חדשה
+          <input id="pNew" type="password" autocomplete="new-password" minlength="6" required />
+        </label>
+        <label>אימות סיסמה חדשה
+          <input id="pConfirm" type="password" autocomplete="new-password" minlength="6" required />
+        </label>
+        <button type="submit" class="btn btn-primary">החלפת סיסמה</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>גלריה</h2>
+      <p class="muted small">הוסיפו תמונות חדשות והסירו לפי הצורך. התמונות הקיימות נשמרות עד שתסירו אותן.</p>
+      <div class="upload-row">
+        <label class="upload-zone">
+          <input id="upload" type="file" accept="image/*" />
+          <span>לחצו כאן להעלאת תמונה</span>
+        </label>
+        <span id="uploadStatus" class="muted small"></span>
+      </div>
+      <div id="galleryGrid" class="gallery-grid-admin"></div>
+    </section>
+  </div>
+
+  <script src="manage-grill.js"></script>
+</body>
+</html>
